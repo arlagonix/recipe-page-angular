@@ -1,0 +1,19 @@
+.main {
+  margin: 2rem auto;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: min(900px, 100% - 1rem * 2);
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/8;
+  position: relative;
+  border-radius: 1rem;
+
+  & img {
+    border-radius: inherit;
+  }
+}

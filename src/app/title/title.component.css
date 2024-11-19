@@ -1,0 +1,7 @@
+.title {
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 1.5rem;
+  color: var(--stone-900);
+}
