@@ -1,0 +1,7 @@
+.subtitle {
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  margin-top: 48px;
+  color: var(--brown-800);
+}

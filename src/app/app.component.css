@@ -1,9 +1,15 @@
-.main {
+.main,
+.author-block {
   margin: 2rem auto;
   background-color: var(--white);
   padding: 2rem;
   border-radius: 1rem;
   width: min(900px, 100% - 1rem * 2);
+}
+
+.author-block {
+  text-align: center;
+  padding-top: calc(2rem - 12px); /* Yeah, it's crap, I know it */
 }
 
 .image-container {
@@ -15,5 +21,67 @@
 
   & img {
     border-radius: inherit;
+  }
+}
+
+.list {
+  margin-top: 24px;
+  padding-left: 24px;
+}
+
+.list-item {
+  padding-left: 16px;
+
+  &::marker {
+    color: var(--rose-800);
+  }
+}
+
+.numbered-list {
+  margin-top: 24px;
+  padding-left: 24px;
+}
+
+.numbered-list-item {
+  padding: 0;
+
+  &::marker {
+    color: var(--rose-800);
+    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+  }
+}
+
+.hr {
+  color: var(--rose-50);
+  margin: 48px 0;
+  border-style: solid;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Outfit", sans-serif;
+  margin-top: 16px;
+
+  & tr {
+    width: 50%;
+  }
+
+  & td {
+    padding: 16px 24px; /* Adds spacing inside cells */
+    border-bottom: 1px solid #e0e0e0; /* Light gray line */
+    font-size: 18px;
+    text-align: left; /* Aligns text to the left */
+    color: #4a4a4a; /* Default text color */
+  }
+
+  & td.value {
+    font-weight: bold; /* Bold text for values */
+    color: #a0522d; /* Brown color for values */
+  }
+
+  & tr:last-child td {
+    border-bottom: none; /* Removes border for the last row */
   }
 }

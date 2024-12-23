@@ -1,0 +1,13 @@
+.main {
+  padding: 24px;
+  border-radius: 8px;
+  background: var(--rose-50);
+  margin-top: 32px;
+}
+
+.title {
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--rose-800);
+}
